@@ -1,0 +1,596 @@
+html{
+    scroll-padding: 40px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+}
+/* footer */
+.stylish-text{
+    font-style: oblique;
+    font-weight: bold;
+    color: #ff69b4; /* Pink color */
+    font-size: 1.2em;
+}
+/* navigation bar */
+.nav-link{
+    font-weight: bold;
+    font-family: 'Arial, sans-serif'; /* Change font family */
+    font-size: 20px;                  /* Change font size */
+    color:black;                  /* Change text color */
+    transition: color 0.3s;
+
+}
+.nav-link:hover {
+    color: #ca1313;                   /* Change color on hover */
+}
+.nav-item{
+    padding-right: 20px;
+ }
+
+ /* loader */
+ #loading-div{
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ min-height: 70vh;
+ overflow: hidden;
+ }
+ #loading-spinner{
+ width: 60px;
+ height: 60px;
+ position: relative;
+ border: 3px solid rgb(170, 149, 149);
+ border-radius: 50%;
+ border-top-color: #1e30f3;
+ animation: spin 1s linear infinite;
+ }
+ @keyframes spin{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+ }
+ /* Home menu */
+ .home-menu {
+
+    background: rgb(7, 145, 94);
+    min-height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0; 
+    
+}
+.text-style{
+    font-weight: 700; 
+    font-style: normal; 
+    color: rgb(255, 255, 255); 
+    font-kerning: none; 
+    text-decoration: none;
+    font-family: "YAFdJoNRMmU 0", auto;
+    font-size: 30px;
+}
+.text-styleABC{
+    font-size: 70px;
+    font-weight: bold; 
+    font-style: normal; 
+    color: rgb(255, 255, 255); 
+    font-kerning: none; 
+    text-decoration: none;
+    font-family: "YAFdJoNRMmU 0", auto;
+    line-height: 76px;
+}
+.move-down{
+   
+    margin-top: 250px;
+}
+.stylish-button {
+    background-color: black;
+    
+    color: rgb(32, 205, 141);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 9px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.btn-button{
+    font-size: 20px;
+    font-weight: bold;
+}
+/* product */
+
+.pp-design{
+    background-color: aquamarine;
+}
+.state{
+    font-family: "YAFdJoNRMmU 0", auto;
+    background-color: rgb(244,244,244);
+    color:black;
+    border: 1px solid transparent;
+    padding: 20px;
+    max-width: 600px;
+    min-height: 550px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center;
+    border-radius: 15%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.state-pp{
+    font-family: "YAFdJoNRMmU 0", auto;
+    color:rgb(244,244,244);
+    border: 1px solid transparent;
+    max-width: 600px;
+    min-height: 550px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center;
+    border-radius: 15%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.state h2{
+    font-weight: bold;
+}
+.state p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+.pp-menu{
+    background:black;
+    color: white;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0; 
+    
+}
+.pp-menu h2{
+    font-family: "YAFdJoNRMmU 0", auto;
+    color: rgb(32, 205, 141);
+}
+.pp-menu h3{
+    font-family: "YAFdJoNRMmU 0", auto;
+    color: rgb(32, 205, 141);
+}
+/* features menu */
+.ff-menu{
+    background-color:rgb(32, 205, 141);
+    color: white;
+    min-height: 60vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(-10deg); /* Start smaller and slightly rotated */
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(1.2) rotate(5deg); /* Overshoot to make it pop */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg); /* Settle in the original position */
+    }
+}
+
+.ff-menu > div > h2 {
+    animation: popIn 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Apply the animation */
+    font-weight: bold; /* Make the text bold to stand out */
+    color: white; /* Add a distinct color to grab attention */
+}
+
+.state-ff{
+    background-color: rgb(32, 205, 141);
+    color: white ;
+    border: 1px solid transparent;
+    padding: 20px;
+    max-width: 600px;
+    min-height: 550px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center;
+    border-radius: 15%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.state-ff p{
+    color: black;
+    font-size: 18px;
+}
+.state-ff i {
+    margin-bottom: 10px; /* Optional: adjust spacing below the icon */
+    margin-top: -150px; /* Move the icon upwards */
+}
+/* FAQ */
+.state-faq{
+    background-color: rgb(5, 5, 58);
+    color: rgb(32, 205, 141);
+    background-color: rgb(250, 218, 218);
+    color: white ;
+    border: 1px solid transparent;
+    padding: 20px;
+    max-width: 600px;
+    min-height: 380px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center;
+    border-radius: 15%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.faq-ff{
+    background-color: rgb(255, 255, 255);
+    min-height: 500px;
+    font-family: "YAFdJoNRMmU 0", auto;
+}
+.faq-ff h1{
+    color:rgb(16, 161, 108);
+}
+.faq-ff h2{
+    color: rgb(12, 168, 111);
+}
+.faq-ff p{
+    color:rgb(24, 37, 39);
+    font-size: 18px;
+}
+/* review part */
+
+.state-rr{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid transparent;
+    padding: 20px;
+    max-width: 600px;
+    min-height: 380px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center;
+    border-radius: 15%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.review-ff{
+    background-color:rgb(204, 244, 229);
+    min-height: 500px;
+    font-family: "YAFdJoNRMmU 0", auto;
+}
+.review-ff h2{
+    color:rgb(32, 205, 141) ;
+}
+.review-ff p{
+    font-size: 18px;
+}
+.review-ff h1{
+    color:rgb(32, 205, 141);
+}
+.state-rr img {
+    border-radius: 50%; /* Makes the image circular */
+    background-color: #f0f0f0; /* Change to any color you prefer */
+    padding: 10px; /* Optional: add padding to create some space around the image */
+    border: 2px solid #ddd; /* Optional: add a border to the image */
+}
+/* Contact */
+.con-ff{
+    background-color: black;
+    min-height: 500px;
+    font-family: "YAFdJoNRMmU 0", auto;
+}
+.svg-rr{
+
+        display: flex;
+        justify-content: center; /* Centers horizontally */
+        align-items: center; /* Centers vertically */
+        height: 100%; /* Optional: set a height for the container */
+        margin-top: 50px;
+    
+    
+}
+.con-ff{
+    color:rgb(32, 205, 141);
+}
+.stylish-button-co{
+    background-color: rgb(32, 205, 141);
+    
+    color:black;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 9px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+.con-ee{
+    padding: 20px;
+    max-width: 600px;
+    min-height: 380px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center;
+    border-radius: 15%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.con-ee h2{
+    color: white;
+}
+
+
+
+/* <!----------------------responsive Home menu---------------> */
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .text-style {
+        font-size: 2rem;
+        margin-bottom: 0rem;
+    }
+
+    .move-down {
+        margin-top: -0.5rem; /* Reduce space above .text-styleABC */
+    }
+
+    .text-styleABC {
+        font-size: 1.5rem;
+    }
+
+    .btn-button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-menu div {
+        text-align: center;
+    }
+
+    .text-style {
+        font-size: 1.8rem;
+        margin-bottom: 0rem;
+    }
+
+    .move-down {
+        margin-top: -0.75rem; /* Further reduce spacing for smaller screens */
+    }
+
+    .text-styleABC {
+        font-size: 1.4rem;
+    }
+
+    .btn-button {
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .animation {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .text-style {
+        font-size: 2.5rem;
+        margin-bottom: 0rem;
+    }
+
+    .move-down {
+        margin-top: -1rem; /* Aggressively reduce space for extra-small screens */
+    }
+
+    .text-styleABC {
+        font-size: 1.5rem;
+    }
+
+    .btn-button {
+        font-size: 1.5rem;
+        padding: 0.4rem 0.8rem;
+    }
+    .animation {
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+/* Product section */
+/* Adjustments for Lottie animations and text centering */
+@media (max-width: 992px) {
+    .state-pp {
+        padding: 2rem;
+    }
+    .pp-menu h2 {
+        font-size: 1.8rem;
+    }
+    .pp-menu .col-md-4 lottie-player {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .state-pp {
+        padding: 1.5rem;
+    }
+    .pp-menu h2 {
+        font-size: 1.6rem;
+    }
+    .pp-menu .col-md-4 lottie-player {
+        width: 70%;
+        height: auto;
+    }
+}
+@media (max-width: 576px) {
+    /* Targeting the card specifically within .pp-design */
+    .pp-design .card {
+        padding: 0.75rem 1rem; /* Reduced padding inside the card */
+        width: 85%;
+        margin: 0 auto;
+    }
+    /* Adjusting the Lottie animation for smaller screens */
+    .pp-design lottie-player {
+        width: 80px; /* Smaller width */
+        height: 80px; /* Smaller height */
+        margin: 0.25rem 0; /* Reduce space around animation */
+    }
+    /* Further adjustments for heading and paragraph */
+    .pp-design h2 {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.25rem;
+    }
+    .pp-design p {
+        font-size: 0.9rem;
+        margin-top: 0.25rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* --------------------------features section----------------------------- */
+
+
+/* Media Query for smaller screens */
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .ff-menu .card {
+        padding: 10px; /* Reduced padding for smaller screens */
+        margin-bottom: 5px; /* Further reduce bottom margin */
+    }
+
+    .navbar-nav {
+        text-align: center; /* Center navbar items on smaller screens */
+    }
+}
+
+/* Additional media query for very small devices */
+@media (max-width: 576px) {
+    .navbar-nav {
+        display: block; /* Stack navbar items vertically */
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 5px; /* Reduced margin between items */
+    }
+}
+
+
+/* ----------------------------FAQ section--------------------------- */
+/* Media Query for smaller screens */
+.faq-ff {
+    padding: 20px; /* Default padding for larger screens */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .faq-ff {
+        padding: 15px; /* Reduced padding for medium screens */
+    }
+
+    .faq-ff .card {
+        padding: 15px; /* Adjust padding for cards on smaller screens */
+    }
+
+    .faq-ff h1 {
+        font-size: 1.5rem; /* Smaller title font size */
+    }
+}
+
+/* Additional media query for very small devices */
+@media (max-width: 576px) {
+    .faq-ff {
+        padding: 10px; /* Further reduce padding for very small screens */
+    }
+
+    .faq-ff h1 {
+        font-size: 1.25rem; /* Further reduce title font size */
+    }
+
+    .navbar-nav {
+        text-align: center; /* Center navbar items on smaller screens */
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 5px; /* Reduce space between navbar items */
+    }
+}
+
+/* -------------------------------review section --------------------------*/
+@media (max-width: 768px) {
+    .card img {
+        width: 80%; /* Adjust image size on smaller screens */
+    }
+}
+@media (max-width: 576px) {
+    .review-ff h1 {
+        font-size: 1.5rem; /* Smaller font size for heading */
+    }
+    .card p {
+        font-size: 0.9rem; /* Smaller font size for text */
+    }
+}
+
+
+/* ---------------------contact section----------------- */
+
+     /* Media Queries */
+           /* Media Queries */
+           @media (max-width: 768px) {
+            .svg-rr {
+                margin-bottom: 20px; /* Add space below the Lottie animation */
+            }
+            .con-ee h1 {
+                font-size: 1.8rem; /* Smaller font size for heading */
+            }
+            .con-ee h2 {
+                font-size: 1.2rem; /* Smaller font size for subheadings */
+            }
+            .fa-3x {
+                font-size: 2rem; /* Smaller icon size */
+            }
+        }
+
+        @media (max-width: 576px) {
+            .svg-rr {
+                width: 100%; /* Make Lottie animation take full width */
+            }
+            .stylish-button-co {
+                width: 100%; /* Make buttons full width */
+            }
+            .cc-a{
+                font-size: 15px;
+            }
+        }
